@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reviews</title>
+  <link rel="stylesheet" href="./dist/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="website icon" href="./images/Logo.png">
+</head>
+<body>
+
+
+  <!-- Start Header -->
+  <div class="head">
+    <div class="container p-6 mx-auto flex justify-between items-center">
+      <div>
+        <img width="200px" src="images/logo-light.png" alt="">
+      </div>
+      <div class="hidden md:flex items-center space-x-6">
+        <a class="text-slate-900 hover:text-orange-500 duration-200 ease-in" href="#portfolio">Portfolio</a>
+        <a class="text-slate-900 hover:text-orange-500 duration-200 ease-in" href="#about">About</a>
+        <a class="text-slate-900 hover:text-orange-500 duration-200 ease-in" href="#contact">Contact</a>
+        <a class="text-slate-900 hover:text-orange-500 duration-200 ease-in" href="#social">Social</a>
+        <a class="text-white bg-orange-500 px-6 py-2 rounded-full hover:bg-slate-900 duration-200 ease-in" href="#">Call Me</a>
+      </div>
+      <button class="md:hidden" id="mobile-btn">
+        <i class="fa-solid fa-bars text-2xl"></i>
+      </button>
+    </div>
+    <div class="md:hidden">
+      <div class="bg-gray-50 font-bold absolute flex hidden flex-col items-center border border-gray-300 drop-shadow-lg space-y-4 py-8 w-full" id="mobile-menu">
+        <a class="text-slate-900 focus:border-b-2 focus:border-b-orange-500 hover:text-orange-500 duration-200 ease-in" href="#portfolio">Portfolio</a>
+        <a class="text-slate-900 focus:border-b-2 focus:border-b-orange-500 hover:text-orange-500 duration-200 ease-in" href="#about">About</a>
+        <a class="text-slate-900 focus:border-b-2 focus:border-b-orange-500 hover:text-orange-500 duration-200 ease-in" href="#contact">Contact</a>
+        <a class="text-slate-900 focus:border-b-2 focus:border-b-orange-500 hover:text-orange-500 duration-200 ease-in" href="#social">Social</a>
+        <a class="text-white bg-orange-500 px-6 py-2 rounded-full hover:bg-slate-500 duration-200 ease-in" href="#">Call Me</a>
+      </div>
+    </div>
+  </div>
+  <!-- End Header -->
+
+  <!-- Start Hero -->
+  <div class="hero">
+    <div class="container p-6 mx-auto flex flex-col-reverse md:flex-row space-x-6">
+      <div class="text-center space-y-4 text-slate-900 md:text-left md:w-1/2 flex flex-col items-center justify-center">
+        <h1 class="text-3xl md:text-5xl font-bold">Rapidly build modern websites without ever leaving your HTML.</h1>
+        <p>A utility-first CSS framework packed with classes like flex, pt-4, text-center and rotate-90 that can be composed to build any design, directly in your markup.</p>
+        <a class="self-center md:self-start text-white bg-orange-500 px-6 py-2 rounded-full hover:bg-slate-900 duration-200 ease-in" href="">Get Started</a>
+      </div>
+      <div class="md:w-1/2 mb-6 md:mb-0">
+        <img src="images/sketching.svg" alt="">
+      </div>
+    </div>
+  </div>
+  <!-- End Hero -->
+
+  <!-- Start Reviews -->
+  <div class="reviews pb-20">
+    <div class="container p-6 text-center">
+      <div class="content mb-16">
+        <h1 class="text-3xl md:text-5xl font-bold">“Best practices” don't actually work.</h1>
+        <p class="md:w-2/3 mx-auto mt-5">I've written a few thousand words on why traditional “semantic class names” are the reason CSS is hard to maintain, but the truth is you're never going to believe me until you actually try it. If you can suppress the urge to retch long enough to give it a chance, I really think you'll wonder how you ever worked with CSS any other way.</p>
+      </div>
+      <div class="grid md:grid-cols-3 gap-x-5 gap-y-7">
+
+        <div class="review bg-slate-100 relative p-4 border border-solid border-slate-200 rounded-lg hover:bg-white duration-200 ease-in">
+          <img class="absolute p-2 bg-white left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full -top-1 w-20" src="images/user1.jpg" alt="">
+          <h1 class="text-slate-900 font-bold text-lg mt-6">Adam Sandler</h1>
+          <p class="text-sm text-slate-700">The way I wrote it changed frequently. It's not a coincidence Tailwind was released the same year. It might look wrong, but spend time with it and you'll realize semantic CSS was a 20 year mistake.</p>
+        </div>
+
+        <div class="review bg-slate-100 relative p-4 border border-solid border-slate-200 rounded-lg hover:bg-white duration-200 ease-in">
+          <img class="absolute p-2 bg-white left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full -top-1 w-20" src="images/user2.jpg" alt="">
+          <h1 class="text-slate-900 font-bold text-lg mt-6">Joseph Robert</h1>
+          <p class="text-sm text-slate-700">I have no design skills and with Tailwind I can actually make good looking websites with ease and it's everything I ever wanted in a CSS framework.</p>
+        </div>
+
+        <div class="review bg-slate-100 relative p-4 border border-solid border-slate-200 rounded-lg hover:bg-white duration-200 ease-in">
+          <img class="absolute p-2 bg-white left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full -top-1 w-20" src="images/user3.jpg" alt="">
+          <h1 class="text-slate-900 font-bold text-lg mt-6">Marcel Khalifa</h1>
+          <p class="text-sm text-slate-700">I started using @tailwindcss. I instantly fell in love with their responsive modifiers, thorough documentation, and how easy it was customizing color palettes.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <!-- End Reviews -->
+
+  <!-- Start Go -->
+  <div class="go bg-orange-500">
+    <div class="container h-60 md:h-36 p-6 mx-auto flex flex-col md:flex-row justify-between items-center">
+      <div>
+        <h1 class="text-white text-center font-bold text-4xl">Move even faster with Tailwind UI.</h1>
+      </div>
+      <button class="bg-white text-orange-500 px-6 py-2 rounded-full hover:bg-slate-900 hover:text-white duration-200 ease-in">Start Here</button>
+    </div>
+
+  </div>
+  <!-- End Go -->
+
+  <!-- Start Footer -->
+  <div class="footer bg-slate-900 text-white">
+    <div class="container p-6 flex flex-col-reverse md:flex-row px-5 py-10 justify-between space-y-8 md:space-y-0">
+
+      <div class="flex flex-col items-center md:items-start justify-between space-y-12">
+        <img class="mt-5 h-8"src="images/logo-dark.png" alt="">
+        <ul class="flex space-x-5">
+          <li><a href="https://www.facebook.com/profile.php?id=100009880128122" target="_blank"><i class="fa-brands fa-facebook text-white text-2xl hover:text-orange-500 duration-200 ease-in"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-twitter text-white text-2xl hover:text-orange-500 duration-200 ease-in"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-linkedin text-white text-2xl hover:text-orange-500 duration-200 ease-in"></i></a></li>
+          <li><a href="mailto:mo7am3d.tube@gmail.com"><i class="fa-brands fa-google text-white text-2xl hover:text-orange-500 duration-200 ease-in"></i></a></li>
+          <li><a href="tel:+201208859234"><i class="fa-brands fa-whatsapp text-white text-2xl hover:text-orange-500 duration-200 ease-in"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="flex justify-around space-x-32">
+        <div class="flex flex-col space-y-2">
+          <a class="hover:text-orange-500 duration-200 ease-in" href="#home">Home</a>
+          <a class="hover:text-orange-500 duration-200 ease-in" href="#about">About</a>
+          <a class="hover:text-orange-500 duration-200 ease-in" href="#contact">Contact</a>
+        </div>
+        <div class="flex flex-col space-y-2">
+          <a class="hover:text-orange-500 duration-200 ease-in" href="#imprint">Imprint</a>
+          <a class="hover:text-orange-500 duration-200 ease-in" href="#privacy">Privacy</a>
+          <a class="hover:text-orange-500 duration-200 ease-in" href="#credits">Credits</a>
+        </div>
+      </div>
+
+      <div class="flex flex-col justify-between">
+        <form class="flex space-x-3" action="">
+          <input class="flex-1 py-2 px-6 rounded-full" type="text" placeholder="Subscribe To Newsletter">
+          <button class="bg-orange-500 px-4 py-2 rounded-full hover:bg-slate-900 duration-200 ease-in">Go</button>
+        </form>
+        <p class="text-center mt-3">Copyright &copy; <span class="font-bold">2024</span>, All Rights Reserved</p>
+      </div>
+
+    </div>
+  </div>
+  <!-- End Footer -->
+
+  <script src="./dist/js/script.js"></script>
+
+</body>
+</html>
